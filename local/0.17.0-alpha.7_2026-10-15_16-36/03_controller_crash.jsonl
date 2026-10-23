@@ -1,0 +1,17 @@
+{"ts":"2026-10-15T14:41:05Z","event":"run started","scenario":"03_controller_crash","run_id":"20261015T144105Z-1405566","fleet_version":"0.17.0-alpha.7","fleet_controller_image":"rancher/fleet:v0.17.0-alpha.7","fleet_agent_versions":"v0.17.0-alpha.7","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":10,"clusters":10,"bundles":50,"expected_bundledeployments":500}
+{"ts":"2026-10-15T14:41:05Z","event":"deleting leftover gitrepos from a previous run: gitrepo.fleet.cattle.io/scale-50-race"}
+{"ts":"2026-10-15T14:41:22Z","event":"leftover gitrepos fully gone (gitrepos, bundles, bundledeployments, secrets)"}
+{"ts":"2026-10-15T14:41:22Z","event":"test parameters: clusters=10 bundles=50 total_bundledeployments=510"}
+{"ts":"2026-10-15T14:41:22Z","event":"created gitrepo"}
+{"ts":"2026-10-15T14:41:25Z","event":"bundles exist"}
+{"ts":"2026-10-15T14:41:46Z","event":"bundledeployments exist"}
+{"ts":"2026-10-15T14:41:47Z","event":"controller pod deleted"}
+{"ts":"2026-10-15T14:41:50Z","event":"controller pod ready again"}
+{"ts":"2026-10-15T14:42:26Z","event":"bundles ready"}
+{"ts":"2026-10-15T14:42:26Z","event":"gitrepo ready"}
+{"ts":"2026-10-15T14:42:26Z","event":"controller resync time: 36s (510 bundledeployments)"}
+{"ts":"2026-10-15T14:42:26Z","event":"clusters ready"}
+{"ts":"2026-10-15T14:42:26Z","event":"final bundledeployment count: 510 (expected 510)"}
+{"ts":"2026-10-15T14:42:33Z","event":"secrets removed"}
+{"ts":"2026-10-15T14:42:33Z","event":"summary","status":"PASSED","expected":"final bundledeployment count equals 510 (no duplicates from controller resync)","actual":"final bundledeployment count: 510","scenario":"03_controller_crash","run_id":"20261015T144105Z-1405566","fleet_version":"0.17.0-alpha.7","fleet_controller_image":"rancher/fleet:v0.17.0-alpha.7","fleet_agent_versions":"v0.17.0-alpha.7","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":10,"clusters":10,"bundles":50,"expected_bundledeployments":500}
+{"ts":"2026-10-15T14:42:33Z","event":"run finished (PASSED)"}

@@ -1,0 +1,32 @@
+{"ts":"2026-10-15T14:48:51Z","event":"run started","scenario":"07_webhook_vs_polling","run_id":"20261015T144851Z-1453693","fleet_version":"0.17.0-alpha.7","fleet_controller_image":"rancher/fleet:v0.17.0-alpha.7","fleet_agent_versions":"v0.17.0-alpha.7","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":10,"clusters":null,"bundles":null,"expected_bundledeployments":null}
+{"ts":"2026-10-15T14:48:51Z","event":"deleting leftover gitrepos from a previous run: gitrepo.fleet.cattle.io/single-race"}
+{"ts":"2026-10-15T14:48:55Z","event":"leftover gitrepos fully gone (gitrepos, bundles, bundledeployments, secrets)"}
+{"ts":"2026-10-15T14:48:55Z","event":"test parameters: waves=5 wave_interval_seconds=2 poll_interval_seconds=15"}
+{"ts":"2026-10-15T14:48:55Z","event":"using gitea webhook id=6"}
+{"ts":"2026-10-15T14:48:55Z","event":"created gitrepo (pollingInterval=15s)"}
+{"ts":"2026-10-15T14:48:55Z","event":"phase 1: gitea webhook deactivated"}
+{"ts":"2026-10-15T14:48:56Z","event":"phase1-polling wave 1: pushed commit cbf205d8874c3bcdae67a6ab16a63f383bb9e716"}
+{"ts":"2026-10-15T14:49:12Z","event":"phase1-polling wave 1: status.commit=cbf205d8874c3bcdae67a6ab16a63f383bb9e716 observed after 16s"}
+{"ts":"2026-10-15T14:49:14Z","event":"phase1-polling wave 2: pushed commit 41abfc7bdb88c5aa016814f7eb13e124c194581b"}
+{"ts":"2026-10-15T14:49:28Z","event":"phase1-polling wave 2: status.commit=41abfc7bdb88c5aa016814f7eb13e124c194581b observed after 14s"}
+{"ts":"2026-10-15T14:49:31Z","event":"phase1-polling wave 3: pushed commit 036b1c3b08bf6b20427684fcc8ac5bd6ed4423de"}
+{"ts":"2026-10-15T14:49:43Z","event":"phase1-polling wave 3: status.commit=036b1c3b08bf6b20427684fcc8ac5bd6ed4423de observed after 12s"}
+{"ts":"2026-10-15T14:49:46Z","event":"phase1-polling wave 4: pushed commit faba51e4fabda1e3d89a87ecee5f1e1b931d8d59"}
+{"ts":"2026-10-15T14:50:00Z","event":"phase1-polling wave 4: status.commit=faba51e4fabda1e3d89a87ecee5f1e1b931d8d59 observed after 14s"}
+{"ts":"2026-10-15T14:50:02Z","event":"phase1-polling wave 5: pushed commit f5e29398db7db71af64ee923b3bda30b55194b86"}
+{"ts":"2026-10-15T14:50:14Z","event":"phase1-polling wave 5: status.commit=f5e29398db7db71af64ee923b3bda30b55194b86 observed after 12s"}
+{"ts":"2026-10-15T14:50:14Z","event":"phase 2: gitea webhook reactivated"}
+{"ts":"2026-10-15T14:50:14Z","event":"phase2-webhook wave 1: pushed commit a4b78fd5dc1ab8ae57f154d674a2518f1b9c6f82"}
+{"ts":"2026-10-15T14:50:30Z","event":"phase2-webhook wave 1: status.commit=a4b78fd5dc1ab8ae57f154d674a2518f1b9c6f82 observed after 16s"}
+{"ts":"2026-10-15T14:50:33Z","event":"phase2-webhook wave 2: pushed commit 68a98601dec64a9c9e2e965fd25dfd06811fafbe"}
+{"ts":"2026-10-15T14:50:47Z","event":"phase2-webhook wave 2: status.commit=68a98601dec64a9c9e2e965fd25dfd06811fafbe observed after 13s"}
+{"ts":"2026-10-15T14:50:49Z","event":"phase2-webhook wave 3: pushed commit f5024af76bf0a6686a62063437915cea8450d0e6"}
+{"ts":"2026-10-15T14:51:03Z","event":"phase2-webhook wave 3: status.commit=f5024af76bf0a6686a62063437915cea8450d0e6 observed after 14s"}
+{"ts":"2026-10-15T14:51:05Z","event":"phase2-webhook wave 4: pushed commit 19a55f285b18d35f5c3e932e67c8de89d6eba2a6"}
+{"ts":"2026-10-15T14:51:18Z","event":"phase2-webhook wave 4: status.commit=19a55f285b18d35f5c3e932e67c8de89d6eba2a6 observed after 13s"}
+{"ts":"2026-10-15T14:51:20Z","event":"phase2-webhook wave 5: pushed commit d28a8ae1eac71f2287038e17e7e327fbd90bb968"}
+{"ts":"2026-10-15T14:51:33Z","event":"phase2-webhook wave 5: status.commit=d28a8ae1eac71f2287038e17e7e327fbd90bb968 observed after 13s"}
+{"ts":"2026-10-15T14:51:33Z","event":"phase 2: final commit d28a8ae1eac71f2287038e17e7e327fbd90bb968, status.webhookCommit="}
+{"ts":"2026-10-15T14:51:37Z","event":"secrets removed"}
+{"ts":"2026-10-15T14:51:37Z","event":"summary","status":"FAILED","expected":"phase 2 final status.webhookCommit equals last pushed commit d28a8ae1eac71f2287038e17e7e327fbd90bb968 (proves the webhook, not polling, drove the update)","actual":"status.webhookCommit=","scenario":"07_webhook_vs_polling","run_id":"20261015T144851Z-1453693","fleet_version":"0.17.0-alpha.7","fleet_controller_image":"rancher/fleet:v0.17.0-alpha.7","fleet_agent_versions":"v0.17.0-alpha.7","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":10,"clusters":null,"bundles":null,"expected_bundledeployments":null}
+{"ts":"2026-10-15T14:51:37Z","event":"run finished (FAILED)"}
