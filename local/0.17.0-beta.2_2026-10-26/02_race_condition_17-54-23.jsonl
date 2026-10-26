@@ -1,0 +1,72 @@
+{"ts":"2026-10-26T16:54:23Z","event":"run started","scenario":"02_race_condition","run_id":"20261026T165423Z-2820702","fleet_version":"0.17.0-beta.2","fleet_controller_image":"rancher/fleet:v0.17.0-beta.2","fleet_agent_versions":"v0.17.0-beta.2","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":25,"clusters":25,"bundles":50,"expected_bundledeployments":1250}
+{"ts":"2026-10-26T16:54:23Z","event":"test parameters: clusters=25 bundles=50 waves=8"}
+{"ts":"2026-10-26T16:54:23Z","event":"created gitrepo"}
+{"ts":"2026-10-26T16:54:24Z","event":"wave 1: pushed commit 6312d749b82badcb39a1bfadbaba0f5192170d1c (image=nginx:1.25)"}
+{"ts":"2026-10-26T16:54:24Z","event":"wave 1: commit 6312d749b82badcb39a1bfadbaba0f5192170d1c found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T16:54:27Z","event":"wave 1: commit 6312d749b82badcb39a1bfadbaba0f5192170d1c found on 39/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T16:54:31Z","event":"wave 1: commit 6312d749b82badcb39a1bfadbaba0f5192170d1c found on 50/50 bundles (0/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T16:54:31Z","event":"wave 1: gitrepo status.commit=6312d749b82badcb39a1bfadbaba0f5192170d1c (pushed 6312d749b82badcb39a1bfadbaba0f5192170d1c) -- 0 bundledeployments stale, all already on this commit"}
+{"ts":"2026-10-26T16:54:38Z","event":"wave 2: pushed commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 (image=nginx:1.26)"}
+{"ts":"2026-10-26T16:54:38Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T16:54:41Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T16:54:45Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T16:54:48Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 13/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T16:54:51Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 24/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T16:54:55Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 34/50 bundles (1/50 fully ready)"}
+{"ts":"2026-10-26T16:54:58Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 45/50 bundles (1/50 fully ready)"}
+{"ts":"2026-10-26T16:55:02Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (1/50 fully ready)"}
+{"ts":"2026-10-26T16:55:05Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (1/50 fully ready)"}
+{"ts":"2026-10-26T16:55:09Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (2/50 fully ready)"}
+{"ts":"2026-10-26T16:55:13Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (2/50 fully ready)"}
+{"ts":"2026-10-26T16:55:16Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (2/50 fully ready)"}
+{"ts":"2026-10-26T16:55:20Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (4/50 fully ready)"}
+{"ts":"2026-10-26T16:55:24Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (4/50 fully ready)"}
+{"ts":"2026-10-26T16:55:28Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (8/50 fully ready)"}
+{"ts":"2026-10-26T16:55:31Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (14/50 fully ready)"}
+{"ts":"2026-10-26T16:55:34Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (28/50 fully ready)"}
+{"ts":"2026-10-26T16:55:38Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (30/50 fully ready)"}
+{"ts":"2026-10-26T16:55:41Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (33/50 fully ready)"}
+{"ts":"2026-10-26T16:55:44Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (36/50 fully ready)"}
+{"ts":"2026-10-26T16:55:47Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (43/50 fully ready)"}
+{"ts":"2026-10-26T16:55:50Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (48/50 fully ready)"}
+{"ts":"2026-10-26T16:55:53Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:55:56Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:00Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:03Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:06Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:09Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:12Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:15Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:18Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:21Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:25Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:28Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:31Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:34Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:37Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:40Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:43Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:46Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:50Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:53Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:56Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:56:59Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:02Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:05Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:08Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:11Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:14Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:18Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:21Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:24Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:27Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:30Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:33Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:36Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:39Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:42Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:46Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:49Z","event":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on 49/50 bundles (49/50 fully ready)"}
+{"ts":"2026-10-26T16:57:52Z","event":"wave 2: TIMEOUT after 180s -- commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 never found on all 50 bundles. Still stuck: scale-50-race-scalability-performance-scale-50-72c1e "}
+{"ts":"2026-10-26T16:57:52Z","event":"summary","status":"FAILED","expected":"wave 2: commit f348174ac7aa226a15a7b15a70bf18551f6f7f76 found on all 50 bundles within 180s","actual":"found on 49/50 bundles, still stuck: scale-50-race-scalability-performance-scale-50-72c1e ","scenario":"02_race_condition","run_id":"20261026T165423Z-2820702","fleet_version":"0.17.0-beta.2","fleet_controller_image":"rancher/fleet:v0.17.0-beta.2","fleet_agent_versions":"v0.17.0-beta.2","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":25,"clusters":25,"bundles":50,"expected_bundledeployments":1250}
+{"ts":"2026-10-26T16:57:52Z","event":"run finished (FAILED)"}

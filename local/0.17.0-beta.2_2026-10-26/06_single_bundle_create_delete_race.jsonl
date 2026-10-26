@@ -1,0 +1,9 @@
+{"ts":"2026-10-26T16:36:11Z","event":"run started","scenario":"06_single_bundle_create_delete_race","run_id":"20261026T163611Z-2752929","fleet_version":"0.17.0-beta.2","fleet_controller_image":"rancher/fleet:v0.17.0-beta.2","fleet_agent_versions":",v0.17.0-beta.2","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":25,"clusters":25,"bundles":1,"expected_bundledeployments":25}
+{"ts":"2026-10-26T16:36:11Z","event":"test parameters: clusters=25 bundles=1"}
+{"ts":"2026-10-26T16:36:12Z","event":"created gitrepo"}
+{"ts":"2026-10-26T16:36:14Z","event":"bundle exists (BundleDeployments not necessarily created yet)"}
+{"ts":"2026-10-26T16:36:14Z","event":"deleted gitrepo immediately after bundle creation (deliberately racing the create)"}
+{"ts":"2026-10-26T16:36:14Z","event":"secrets removed"}
+{"ts":"2026-10-26T16:36:14Z","event":"leftover bundles=0 leftover bundledeployments=0 fleet-controller ready=true"}
+{"ts":"2026-10-26T16:36:14Z","event":"summary","status":"PASSED","expected":"0 leftover bundles, 0 leftover bundledeployments, fleet-controller ready=true after delete-during-create","actual":"leftover bundles=0, leftover bundledeployments=0, controller ready=true","scenario":"06_single_bundle_create_delete_race","run_id":"20261026T163611Z-2752929","fleet_version":"0.17.0-beta.2","fleet_controller_image":"rancher/fleet:v0.17.0-beta.2","fleet_agent_versions":",v0.17.0-beta.2","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":25,"clusters":25,"bundles":1,"expected_bundledeployments":25}
+{"ts":"2026-10-26T16:36:14Z","event":"run finished (PASSED)"}

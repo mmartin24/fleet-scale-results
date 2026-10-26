@@ -1,0 +1,17 @@
+{"ts":"2026-10-26T16:16:20Z","event":"run started","scenario":"03_controller_crash","run_id":"20261026T161620Z-2608338","fleet_version":"0.17.0-beta.2","fleet_controller_image":"rancher/fleet:v0.17.0-beta.2","fleet_agent_versions":",v0.17.0-beta.2","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":25,"clusters":25,"bundles":50,"expected_bundledeployments":1250}
+{"ts":"2026-10-26T16:16:20Z","event":"deleting leftover gitrepos from a previous run: gitrepo.fleet.cattle.io/scale-50-race"}
+{"ts":"2026-10-26T16:17:07Z","event":"leftover gitrepos fully gone (gitrepos, bundles, bundledeployments, secrets)"}
+{"ts":"2026-10-26T16:17:07Z","event":"test parameters: clusters=25 bundles=50 total_bundledeployments=1275"}
+{"ts":"2026-10-26T16:17:07Z","event":"created gitrepo"}
+{"ts":"2026-10-26T16:17:13Z","event":"bundles exist"}
+{"ts":"2026-10-26T16:18:29Z","event":"bundledeployments exist"}
+{"ts":"2026-10-26T16:18:30Z","event":"controller pod deleted"}
+{"ts":"2026-10-26T16:18:30Z","event":"controller pod ready again"}
+{"ts":"2026-10-26T16:19:26Z","event":"bundles ready"}
+{"ts":"2026-10-26T16:19:26Z","event":"gitrepo ready"}
+{"ts":"2026-10-26T16:19:26Z","event":"controller resync time: 56s (1275 bundledeployments)"}
+{"ts":"2026-10-26T16:19:26Z","event":"clusters ready"}
+{"ts":"2026-10-26T16:19:26Z","event":"final bundledeployment count: 1275 (expected 1275)"}
+{"ts":"2026-10-26T16:20:07Z","event":"secrets removed"}
+{"ts":"2026-10-26T16:20:07Z","event":"summary","status":"PASSED","expected":"final bundledeployment count equals 1275 (no duplicates from controller resync)","actual":"final bundledeployment count: 1275","scenario":"03_controller_crash","run_id":"20261026T161620Z-2608338","fleet_version":"0.17.0-beta.2","fleet_controller_image":"rancher/fleet:v0.17.0-beta.2","fleet_agent_versions":",v0.17.0-beta.2","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":25,"clusters":25,"bundles":50,"expected_bundledeployments":1250}
+{"ts":"2026-10-26T16:20:07Z","event":"run finished (PASSED)"}
