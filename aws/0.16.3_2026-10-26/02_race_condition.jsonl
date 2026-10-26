@@ -1,0 +1,50 @@
+{"ts":"2026-10-26T10:56:14Z","event":"run started","scenario":"02_race_condition","run_id":"20261026T105611Z-1553971","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":50,"bundles":50,"expected_bundledeployments":2500}
+{"ts":"2026-10-26T10:56:17Z","event":"test parameters: clusters=50 bundles=50 waves=8"}
+{"ts":"2026-10-26T10:56:19Z","event":"created gitrepo"}
+{"ts":"2026-10-26T10:56:20Z","event":"wave 1: pushed commit 57f3d642b69489838c101834faa93ea47f7ff92f (image=nginx:1.25)"}
+{"ts":"2026-10-26T10:56:22Z","event":"wave 1: commit 57f3d642b69489838c101834faa93ea47f7ff92f found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T10:56:27Z","event":"wave 1: commit 57f3d642b69489838c101834faa93ea47f7ff92f found on 50/50 bundles (16/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T10:56:28Z","event":"wave 1: gitrepo status.commit=57f3d642b69489838c101834faa93ea47f7ff92f (pushed 57f3d642b69489838c101834faa93ea47f7ff92f) -- 0 bundledeployments stale, all already on this commit"}
+{"ts":"2026-10-26T10:56:34Z","event":"wave 2: pushed commit 315c10b3fbf39e9e83775560360c5aad0eeb6e49 (image=nginx:1.26)"}
+{"ts":"2026-10-26T10:56:35Z","event":"wave 2: commit 315c10b3fbf39e9e83775560360c5aad0eeb6e49 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T10:56:40Z","event":"wave 2: commit 315c10b3fbf39e9e83775560360c5aad0eeb6e49 found on 50/50 bundles (49/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T10:56:42Z","event":"wave 2: gitrepo status.commit=315c10b3fbf39e9e83775560360c5aad0eeb6e49 (pushed 315c10b3fbf39e9e83775560360c5aad0eeb6e49) -- 50 bundledeployment(s) still on an older commit (expected mid-race; only a real problem if still nonzero after the final wave)"}
+{"ts":"2026-10-26T10:56:48Z","event":"wave 3: pushed commit adaafb410e17006dff657d5d5750252189741060 (image=nginx:1.27)"}
+{"ts":"2026-10-26T10:56:49Z","event":"wave 3: commit adaafb410e17006dff657d5d5750252189741060 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T10:56:53Z","event":"wave 3: commit adaafb410e17006dff657d5d5750252189741060 found on 50/50 bundles (49/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T10:56:55Z","event":"wave 3: gitrepo status.commit=adaafb410e17006dff657d5d5750252189741060 (pushed adaafb410e17006dff657d5d5750252189741060) -- 0 bundledeployments stale, all already on this commit"}
+{"ts":"2026-10-26T10:57:01Z","event":"wave 4: pushed commit d18f02a950b3a70ede841ece683cbe57b9c84717 (image=nginx:1.25)"}
+{"ts":"2026-10-26T10:57:03Z","event":"wave 4: commit d18f02a950b3a70ede841ece683cbe57b9c84717 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T10:57:07Z","event":"wave 4: commit d18f02a950b3a70ede841ece683cbe57b9c84717 found on 50/50 bundles (49/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T10:57:09Z","event":"wave 4: gitrepo status.commit=d18f02a950b3a70ede841ece683cbe57b9c84717 (pushed d18f02a950b3a70ede841ece683cbe57b9c84717) -- 0 bundledeployments stale, all already on this commit"}
+{"ts":"2026-10-26T10:57:15Z","event":"wave 5: pushed commit 8690fcfc61432702f6b352cf2e036f2afbe50474 (image=nginx:1.26)"}
+{"ts":"2026-10-26T10:57:17Z","event":"wave 5: commit 8690fcfc61432702f6b352cf2e036f2afbe50474 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T10:57:21Z","event":"wave 5: commit 8690fcfc61432702f6b352cf2e036f2afbe50474 found on 50/50 bundles (49/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T10:57:23Z","event":"wave 5: gitrepo status.commit=8690fcfc61432702f6b352cf2e036f2afbe50474 (pushed 8690fcfc61432702f6b352cf2e036f2afbe50474) -- 0 bundledeployments stale, all already on this commit"}
+{"ts":"2026-10-26T10:57:29Z","event":"wave 6: pushed commit c193755e34e02280a7d585da7cbea3878e38b382 (image=nginx:1.27)"}
+{"ts":"2026-10-26T10:57:31Z","event":"wave 6: commit c193755e34e02280a7d585da7cbea3878e38b382 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T10:57:35Z","event":"wave 6: commit c193755e34e02280a7d585da7cbea3878e38b382 found on 50/50 bundles (49/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T10:57:37Z","event":"wave 6: gitrepo status.commit=c193755e34e02280a7d585da7cbea3878e38b382 (pushed c193755e34e02280a7d585da7cbea3878e38b382) -- 0 bundledeployments stale, all already on this commit"}
+{"ts":"2026-10-26T10:57:43Z","event":"wave 7: pushed commit d930e4c66e3d42a637c48c0a939904f99f7ca5dd (image=nginx:1.25)"}
+{"ts":"2026-10-26T10:57:44Z","event":"wave 7: commit d930e4c66e3d42a637c48c0a939904f99f7ca5dd found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T10:57:49Z","event":"wave 7: commit d930e4c66e3d42a637c48c0a939904f99f7ca5dd found on 50/50 bundles (49/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T10:57:50Z","event":"wave 7: gitrepo status.commit=d930e4c66e3d42a637c48c0a939904f99f7ca5dd (pushed d930e4c66e3d42a637c48c0a939904f99f7ca5dd) -- 0 bundledeployments stale, all already on this commit"}
+{"ts":"2026-10-26T10:57:56Z","event":"wave 8: pushed commit f38a5fc7af5fa75640a187bf64da69dc02a35532 (image=nginx:1.26)"}
+{"ts":"2026-10-26T10:57:58Z","event":"wave 8: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 found on 0/50 bundles (0/50 fully ready)"}
+{"ts":"2026-10-26T10:58:02Z","event":"wave 8: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 found on 50/50 bundles (49/50 fully ready) -- all 50 bundles matched"}
+{"ts":"2026-10-26T10:58:04Z","event":"wave 8: gitrepo status.commit=f38a5fc7af5fa75640a187bf64da69dc02a35532 (pushed f38a5fc7af5fa75640a187bf64da69dc02a35532) -- 0 bundledeployments stale, all already on this commit"}
+{"ts":"2026-10-26T10:58:04Z","event":"wave 8 final check: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 at 49/50 bundles fully ready"}
+{"ts":"2026-10-26T10:58:10Z","event":"wave 8 final check: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 at 49/50 bundles fully ready"}
+{"ts":"2026-10-26T10:58:16Z","event":"wave 8 final check: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 at 49/50 bundles fully ready"}
+{"ts":"2026-10-26T10:58:21Z","event":"wave 8 final check: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 at 49/50 bundles fully ready"}
+{"ts":"2026-10-26T10:58:27Z","event":"wave 8 final check: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 at 49/50 bundles fully ready"}
+{"ts":"2026-10-26T10:58:33Z","event":"wave 8 final check: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 at 49/50 bundles fully ready"}
+{"ts":"2026-10-26T10:58:39Z","event":"wave 8 final check: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 at 49/50 bundles fully ready"}
+{"ts":"2026-10-26T10:58:45Z","event":"wave 8 final check: commit f38a5fc7af5fa75640a187bf64da69dc02a35532 at 49/50 bundles fully ready"}
+{"ts":"2026-10-26T10:58:50Z","event":"wave 8 final check: all 50/50 bundles fully ready for commit f38a5fc7af5fa75640a187bf64da69dc02a35532"}
+{"ts":"2026-10-26T10:58:51Z","event":"gitrepo ready on final commit f38a5fc7af5fa75640a187bf64da69dc02a35532 (50/50 bundles ok, 2500/2500 bundledeployments ready)"}
+{"ts":"2026-10-26T10:58:52Z","event":"final check: gitrepo status.commit=f38a5fc7af5fa75640a187bf64da69dc02a35532 (expected f38a5fc7af5fa75640a187bf64da69dc02a35532)"}
+{"ts":"2026-10-26T10:58:52Z","event":"stale bundledeployments from superseded commits: 0"}
+{"ts":"2026-10-26T10:58:59Z","event":"secrets removed"}
+{"ts":"2026-10-26T10:58:59Z","event":"summary","status":"PASSED","expected":"after 8 waves: 0 stale bundledeployments and gitrepo status.commit=f38a5fc7af5fa75640a187bf64da69dc02a35532","actual":"stale bundledeployments=0, gitrepo status.commit=f38a5fc7af5fa75640a187bf64da69dc02a35532","scenario":"02_race_condition","run_id":"20261026T105611Z-1553971","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":50,"bundles":50,"expected_bundledeployments":2500}
+{"ts":"2026-10-26T10:58:59Z","event":"run finished (PASSED)"}

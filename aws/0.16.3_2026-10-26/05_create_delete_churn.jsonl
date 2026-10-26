@@ -1,0 +1,39 @@
+{"ts":"2026-10-26T13:17:49Z","event":"run started","scenario":"05_create_delete_churn","run_id":"20261026T131745Z-1791955","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":50,"bundles":50,"expected_bundledeployments":2500}
+{"ts":"2026-10-26T13:17:53Z","event":"test parameters: clusters=50 bundles=50 churn_cycles=5"}
+{"ts":"2026-10-26T13:17:54Z","event":"cycle 1: created gitrepo"}
+{"ts":"2026-10-26T13:18:00Z","event":"cycle 1: bundles exist"}
+{"ts":"2026-10-26T13:18:13Z","event":"cycle 1: bundledeployments exist"}
+{"ts":"2026-10-26T13:18:31Z","event":"cycle 1: bundles ready"}
+{"ts":"2026-10-26T13:18:32Z","event":"cycle 1: gitrepo ready (created-to-ready: 39s)"}
+{"ts":"2026-10-26T13:18:37Z","event":"cycle 1: secrets removed"}
+{"ts":"2026-10-26T13:18:39Z","event":"cycle 1: orphaned_secrets=0 etcd_size=639M"}
+{"ts":"2026-10-26T13:18:40Z","event":"cycle 2: created gitrepo"}
+{"ts":"2026-10-26T13:18:47Z","event":"cycle 2: bundles exist"}
+{"ts":"2026-10-26T13:18:48Z","event":"cycle 2: bundledeployments exist"}
+{"ts":"2026-10-26T13:19:30Z","event":"cycle 2: bundles ready"}
+{"ts":"2026-10-26T13:19:36Z","event":"cycle 2: gitrepo ready (created-to-ready: 57s)"}
+{"ts":"2026-10-26T13:19:42Z","event":"cycle 2: secrets removed"}
+{"ts":"2026-10-26T13:19:44Z","event":"cycle 2: orphaned_secrets=0 etcd_size=639M"}
+{"ts":"2026-10-26T13:19:45Z","event":"cycle 3: created gitrepo"}
+{"ts":"2026-10-26T13:19:52Z","event":"cycle 3: bundles exist"}
+{"ts":"2026-10-26T13:19:53Z","event":"cycle 3: bundledeployments exist"}
+{"ts":"2026-10-26T13:20:29Z","event":"cycle 3: bundles ready"}
+{"ts":"2026-10-26T13:20:30Z","event":"cycle 3: gitrepo ready (created-to-ready: 46s)"}
+{"ts":"2026-10-26T13:20:35Z","event":"cycle 3: secrets removed"}
+{"ts":"2026-10-26T13:20:37Z","event":"cycle 3: orphaned_secrets=0 etcd_size=639M"}
+{"ts":"2026-10-26T13:20:38Z","event":"cycle 4: created gitrepo"}
+{"ts":"2026-10-26T13:20:44Z","event":"cycle 4: bundles exist"}
+{"ts":"2026-10-26T13:20:57Z","event":"cycle 4: bundledeployments exist"}
+{"ts":"2026-10-26T13:21:21Z","event":"cycle 4: bundles ready"}
+{"ts":"2026-10-26T13:21:22Z","event":"cycle 4: gitrepo ready (created-to-ready: 45s)"}
+{"ts":"2026-10-26T13:21:28Z","event":"cycle 4: secrets removed"}
+{"ts":"2026-10-26T13:21:29Z","event":"cycle 4: orphaned_secrets=0 etcd_size=639M"}
+{"ts":"2026-10-26T13:21:31Z","event":"cycle 5: created gitrepo"}
+{"ts":"2026-10-26T13:21:37Z","event":"cycle 5: bundles exist"}
+{"ts":"2026-10-26T13:21:49Z","event":"cycle 5: bundledeployments exist"}
+{"ts":"2026-10-26T13:22:13Z","event":"cycle 5: bundles ready"}
+{"ts":"2026-10-26T13:22:14Z","event":"cycle 5: gitrepo ready (created-to-ready: 45s)"}
+{"ts":"2026-10-26T13:22:20Z","event":"cycle 5: secrets removed"}
+{"ts":"2026-10-26T13:22:21Z","event":"cycle 5: orphaned_secrets=0 etcd_size=639M"}
+{"ts":"2026-10-26T13:22:21Z","event":"summary","status":"PASSED","expected":"5 create/delete cycles complete without hanging, with etcd size/orphaned-secret metrics logged each cycle","actual":"completed 5/5 cycles","scenario":"05_create_delete_churn","run_id":"20261026T131745Z-1791955","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":50,"bundles":50,"expected_bundledeployments":2500}
+{"ts":"2026-10-26T13:22:21Z","event":"run finished (PASSED)"}

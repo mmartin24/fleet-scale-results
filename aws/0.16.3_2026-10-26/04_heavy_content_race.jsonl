@@ -1,0 +1,12 @@
+{"ts":"2026-10-26T11:06:40Z","event":"run started","scenario":"04_heavy_content_race","run_id":"20261026T110636Z-1571604","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":50,"bundles":1,"expected_bundledeployments":50}
+{"ts":"2026-10-26T11:06:43Z","event":"test parameters: clusters=50 bundles=1"}
+{"ts":"2026-10-26T11:06:45Z","event":"created gitrepo (commit 2f116d0d2302f945786db65f734209fe6564f684)"}
+{"ts":"2026-10-26T11:06:48Z","event":"bundledeployments exist for commit 2f116d0d2302f945786db65f734209fe6564f684 (still rolling out, not waiting for ready)"}
+{"ts":"2026-10-26T11:06:49Z","event":"deleted gitrepo mid-rollout (commit 2f116d0d2302f945786db65f734209fe6564f684 not yet ready)"}
+{"ts":"2026-10-26T11:06:54Z","event":"re-created gitrepo (commit 1b7c19ba4d184ef241a6bdbcf86636e18de26875) after commit 2f116d0d2302f945786db65f734209fe6564f684's delete finished (or overlapped, if the first apply attempt already landed live)"}
+{"ts":"2026-10-26T11:07:51Z","event":"gitrepo ready on commit 1b7c19ba4d184ef241a6bdbcf86636e18de26875 (50/50 bundledeployments ready)"}
+{"ts":"2026-10-26T11:07:52Z","event":"final bundledeployment count: 50 (expected 50), gitrepo status.commit=1b7c19ba4d184ef241a6bdbcf86636e18de26875 (expected 1b7c19ba4d184ef241a6bdbcf86636e18de26875)"}
+{"ts":"2026-10-26T11:07:53Z","event":"bundledeployments still pointing at deleted commit 2f116d0d2302f945786db65f734209fe6564f684: 0"}
+{"ts":"2026-10-26T11:07:56Z","event":"secrets removed"}
+{"ts":"2026-10-26T11:07:56Z","event":"summary","status":"PASSED","expected":"final bundledeployment count=50, gitrepo status.commit=1b7c19ba4d184ef241a6bdbcf86636e18de26875, 0 bundledeployments left on deleted commit 2f116d0d2302f945786db65f734209fe6564f684","actual":"final bundledeployment count=50, status.commit=1b7c19ba4d184ef241a6bdbcf86636e18de26875, stale-on-2f116d0d2302f945786db65f734209fe6564f684=0","scenario":"04_heavy_content_race","run_id":"20261026T110636Z-1571604","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":50,"bundles":1,"expected_bundledeployments":50}
+{"ts":"2026-10-26T11:07:56Z","event":"run finished (PASSED)"}

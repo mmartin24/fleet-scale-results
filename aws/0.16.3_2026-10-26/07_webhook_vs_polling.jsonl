@@ -1,0 +1,30 @@
+{"ts":"2026-10-26T11:22:09Z","event":"run started","scenario":"07_webhook_vs_polling","run_id":"20261026T112206Z-1596933","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":null,"bundles":null,"expected_bundledeployments":null}
+{"ts":"2026-10-26T11:22:12Z","event":"test parameters: waves=5 wave_interval_seconds=2 poll_interval_seconds=15"}
+{"ts":"2026-10-26T11:22:14Z","event":"using gitea webhook id=1"}
+{"ts":"2026-10-26T11:22:16Z","event":"created gitrepo (pollingInterval=15s)"}
+{"ts":"2026-10-26T11:22:16Z","event":"phase 1: gitea webhook deactivated"}
+{"ts":"2026-10-26T11:22:17Z","event":"phase1-polling wave 1: pushed commit 02bb734c807e16268e56b06918412170dc364b10"}
+{"ts":"2026-10-26T11:22:31Z","event":"phase1-polling wave 1: status.commit=02bb734c807e16268e56b06918412170dc364b10 observed after 14s"}
+{"ts":"2026-10-26T11:22:34Z","event":"phase1-polling wave 2: pushed commit f09851f3520e8649b9cc042c78eb7f9c7222d0df"}
+{"ts":"2026-10-26T11:22:47Z","event":"phase1-polling wave 2: status.commit=f09851f3520e8649b9cc042c78eb7f9c7222d0df observed after 12s"}
+{"ts":"2026-10-26T11:22:49Z","event":"phase1-polling wave 3: pushed commit eb6f5cc09b6835556df343b50cc7d91ae5d52f10"}
+{"ts":"2026-10-26T11:23:02Z","event":"phase1-polling wave 3: status.commit=eb6f5cc09b6835556df343b50cc7d91ae5d52f10 observed after 12s"}
+{"ts":"2026-10-26T11:23:05Z","event":"phase1-polling wave 4: pushed commit 95bdc75e46e85c2d236a8326f585f45aac737a1f"}
+{"ts":"2026-10-26T11:23:17Z","event":"phase1-polling wave 4: status.commit=95bdc75e46e85c2d236a8326f585f45aac737a1f observed after 12s"}
+{"ts":"2026-10-26T11:23:20Z","event":"phase1-polling wave 5: pushed commit 5d80a5376150c75283186891e34852c8c4ea0b0b"}
+{"ts":"2026-10-26T11:23:33Z","event":"phase1-polling wave 5: status.commit=5d80a5376150c75283186891e34852c8c4ea0b0b observed after 12s"}
+{"ts":"2026-10-26T11:23:33Z","event":"phase 2: gitea webhook reactivated"}
+{"ts":"2026-10-26T11:23:34Z","event":"phase2-webhook wave 1: pushed commit dc151a8378da2802000574d9c4541e44ce1b9f9f"}
+{"ts":"2026-10-26T11:23:38Z","event":"phase2-webhook wave 1: status.commit=dc151a8378da2802000574d9c4541e44ce1b9f9f observed after 3s"}
+{"ts":"2026-10-26T11:23:40Z","event":"phase2-webhook wave 2: pushed commit de7fcfbcebd9d1477163d65245227d637dc9dbd3"}
+{"ts":"2026-10-26T11:23:45Z","event":"phase2-webhook wave 2: status.commit=de7fcfbcebd9d1477163d65245227d637dc9dbd3 observed after 5s"}
+{"ts":"2026-10-26T11:23:48Z","event":"phase2-webhook wave 3: pushed commit 6f598d0b299e8972a2ae4a69fe1503399749492e"}
+{"ts":"2026-10-26T11:23:52Z","event":"phase2-webhook wave 3: status.commit=6f598d0b299e8972a2ae4a69fe1503399749492e observed after 3s"}
+{"ts":"2026-10-26T11:23:55Z","event":"phase2-webhook wave 4: pushed commit 902d1ee054698f691689e649faa13cb8377a4710"}
+{"ts":"2026-10-26T11:24:00Z","event":"phase2-webhook wave 4: status.commit=902d1ee054698f691689e649faa13cb8377a4710 observed after 4s"}
+{"ts":"2026-10-26T11:24:03Z","event":"phase2-webhook wave 5: pushed commit 591f352a531514fe1c36a750c6417874872c4d7e"}
+{"ts":"2026-10-26T11:24:05Z","event":"phase2-webhook wave 5: status.commit=591f352a531514fe1c36a750c6417874872c4d7e observed after 1s"}
+{"ts":"2026-10-26T11:24:05Z","event":"phase 2: final commit 591f352a531514fe1c36a750c6417874872c4d7e, status.webhookCommit=902d1ee054698f691689e649faa13cb8377a4710"}
+{"ts":"2026-10-26T11:24:08Z","event":"secrets removed"}
+{"ts":"2026-10-26T11:24:08Z","event":"summary","status":"FAILED","expected":"phase 2 final status.webhookCommit equals last pushed commit 591f352a531514fe1c36a750c6417874872c4d7e (proves the webhook, not polling, drove the update)","actual":"status.webhookCommit=902d1ee054698f691689e649faa13cb8377a4710","scenario":"07_webhook_vs_polling","run_id":"20261026T112206Z-1596933","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":null,"bundles":null,"expected_bundledeployments":null}
+{"ts":"2026-10-26T11:24:08Z","event":"run finished (FAILED)"}

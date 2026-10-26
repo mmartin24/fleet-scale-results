@@ -1,0 +1,15 @@
+{"ts":"2026-10-26T10:59:41Z","event":"run started","scenario":"03_controller_crash","run_id":"20261026T105936Z-1561230","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":50,"bundles":50,"expected_bundledeployments":2500}
+{"ts":"2026-10-26T10:59:44Z","event":"test parameters: clusters=50 bundles=50 total_bundledeployments=2550"}
+{"ts":"2026-10-26T10:59:46Z","event":"created gitrepo"}
+{"ts":"2026-10-26T10:59:48Z","event":"bundles exist"}
+{"ts":"2026-10-26T11:00:00Z","event":"bundledeployments exist"}
+{"ts":"2026-10-26T11:00:03Z","event":"controller pod deleted"}
+{"ts":"2026-10-26T11:00:04Z","event":"controller pod ready again"}
+{"ts":"2026-10-26T11:00:45Z","event":"bundles ready"}
+{"ts":"2026-10-26T11:00:45Z","event":"gitrepo ready"}
+{"ts":"2026-10-26T11:00:45Z","event":"controller resync time: 41s (2550 bundledeployments)"}
+{"ts":"2026-10-26T11:00:46Z","event":"clusters ready"}
+{"ts":"2026-10-26T11:00:48Z","event":"final bundledeployment count: 2550 (expected 2550)"}
+{"ts":"2026-10-26T11:00:54Z","event":"secrets removed"}
+{"ts":"2026-10-26T11:00:54Z","event":"summary","status":"PASSED","expected":"final bundledeployment count equals 2550 (no duplicates from controller resync)","actual":"final bundledeployment count: 2550","scenario":"03_controller_crash","run_id":"20261026T105936Z-1561230","fleet_version":"0.16.3","fleet_controller_image":"rancher/fleet:v0.16.3","fleet_agent_versions":"","upstream_k8s_version":"v1.33.4+rke2r1","clusters_registered":50,"clusters":50,"bundles":50,"expected_bundledeployments":2500}
+{"ts":"2026-10-26T11:00:54Z","event":"run finished (PASSED)"}
