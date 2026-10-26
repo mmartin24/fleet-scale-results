@@ -1,0 +1,11 @@
+{"ts":"2026-10-15T14:36:09Z","event":"run started","scenario":"01_baseline_scale","run_id":"20261015T143609Z-1370563","fleet_version":"0.17.0-alpha.7","fleet_controller_image":"rancher/fleet:v0.17.0-alpha.7","fleet_agent_versions":"v0.17.0-alpha.7","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":10,"clusters":10,"bundles":50,"expected_bundledeployments":500}
+{"ts":"2026-10-15T14:36:10Z","event":"test parameters: clusters=10 bundles=50 total_bundledeployments=510"}
+{"ts":"2026-10-15T14:36:10Z","event":"created gitrepo for 50 bundles"}
+{"ts":"2026-10-15T14:36:16Z","event":"bundles exist"}
+{"ts":"2026-10-15T14:36:37Z","event":"bundledeployments exist"}
+{"ts":"2026-10-15T14:36:53Z","event":"bundles ready"}
+{"ts":"2026-10-15T14:36:53Z","event":"gitrepo ready"}
+{"ts":"2026-10-15T14:36:53Z","event":"clusters ready"}
+{"ts":"2026-10-15T14:36:59Z","event":"secrets removed"}
+{"ts":"2026-10-15T14:36:59Z","event":"summary","status":"PASSED","expected":"all 50 bundles ready on 10 clusters (500/500 bundledeployments), secrets removed after delete","actual":"all 50 bundles reached ready, gitrepo reported 500/500, secrets removed","scenario":"01_baseline_scale","run_id":"20261015T143609Z-1370563","fleet_version":"0.17.0-alpha.7","fleet_controller_image":"rancher/fleet:v0.17.0-alpha.7","fleet_agent_versions":"v0.17.0-alpha.7","upstream_k8s_version":"v1.32.7+k3s1","clusters_registered":10,"clusters":10,"bundles":50,"expected_bundledeployments":500}
+{"ts":"2026-10-15T14:36:59Z","event":"run finished (PASSED)"}
